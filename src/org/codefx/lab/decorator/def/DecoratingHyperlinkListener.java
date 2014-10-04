@@ -38,7 +38,7 @@ public interface DecoratingHyperlinkListener extends HyperlinkListener {
 	 *         {@code decorator}
 	 */
 	default DecoratingHyperlinkListener decorate(
-			Function<? super DecoratingHyperlinkListener, DecoratingHyperlinkListener> decorator) {
+			Function<? super DecoratingHyperlinkListener, ? extends DecoratingHyperlinkListener> decorator) {
 		return decorator.apply(this);
 	}
 
