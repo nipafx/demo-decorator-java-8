@@ -35,7 +35,7 @@ public abstract class AbstractOnHoverHyperlinkListenerDecorator extends Abstract
 	protected abstract void onEnter(HyperlinkEvent event);
 
 	/**
-	 * Called when the event's type is {@link EventType#ENTERED ENTERED}. Called <em>after</em> delegating to the
+	 * Called when the event's type is {@link EventType#EXITED EXITED}. Called <em>after</em> delegating to the
 	 * decorated listener.
 	 * 
 	 * @param event
